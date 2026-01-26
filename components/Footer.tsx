@@ -1,0 +1,57 @@
+import React from 'react';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="border-t border-slate-200 dark:border-white/5 py-16 bg-background-light dark:bg-background-dark/50 mt-auto">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+          {/* Brand */}
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <div className="flex items-center gap-2">
+              <div className="size-6 bg-gradient-to-br from-primary to-indigo-700 rounded flex items-center justify-center text-white">
+                <span className="material-symbols-outlined text-xs">auto_awesome</span>
+              </div>
+              <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB</span>
+            </div>
+            <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
+              The modern workspace for the productivity-obsessed.
+            </p>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+            {['Privacy Policy', 'Terms', 'Changelog', 'Support', 'Status'].map((link) => (
+              <a key={link} href="#" className="hover:text-primary transition-colors">
+                {link}
+              </a>
+            ))}
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex gap-4">
+            <a href="#" className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20">
+              <span className="material-symbols-outlined text-xl">share</span>
+            </a>
+            <a href="#" className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20">
+              <span className="material-symbols-outlined text-xl">mail</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-slate-400 dark:text-slate-600 text-xs">
+            © 2024 DashB. Open source under MIT License.
+          </p>
+          <div className="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-600">
+            <span>Built with</span>
+            <span className="material-symbols-outlined text-xs text-red-400 animate-pulse">favorite</span>
+            <span>by the community</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

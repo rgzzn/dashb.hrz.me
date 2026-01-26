@@ -1,0 +1,84 @@
+import React from 'react';
+
+const Features: React.FC = () => {
+  return (
+    <section className="max-w-7xl mx-auto px-6 py-24">
+      <div className="flex flex-col gap-4 mb-12">
+        <h2 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-secondary">
+          Built for Modern Productivity
+        </h2>
+        <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+          Experience a bento-style layout that organizes your digital life into beautiful, functional widgets optimized for TV interaction.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+        {/* Large Feature Card */}
+        <div className="md:col-span-2 md:row-span-2 rounded-2xl p-8 bg-gradient-to-br from-primary via-accent-purple to-indigo-700 text-white flex flex-col justify-between overflow-hidden relative group shadow-2xl shadow-primary/20 transition-all hover:shadow-primary/40">
+          <div className="absolute -right-12 -top-12 opacity-20 group-hover:scale-110 transition-transform duration-700">
+            <span className="material-symbols-outlined text-[240px]">auto_awesome</span>
+          </div>
+          
+          <div className="z-10">
+            <div className="size-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 border border-white/30">
+              <span className="material-symbols-outlined text-4xl">dashboard</span>
+            </div>
+            <h3 className="text-3xl font-bold mb-4">Personalized Widgets</h3>
+            <p className="text-secondary/80 text-lg opacity-90 max-w-xs">
+              Your data, your way. Drag, drop, and configure dozens of widgets for weather, stocks, crypto, and more directly on your TV.
+            </p>
+          </div>
+
+          <div className="relative mt-8 group-hover:translate-y-[-10px] transition-transform duration-500 z-10">
+            <div className="bg-indigo-950/30 rounded-xl p-4 backdrop-blur-xl border border-white/20 shadow-2xl">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="h-14 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
+                  <span className="material-symbols-outlined text-white/60">partly_cloudy_day</span>
+                </div>
+                <div className="h-14 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
+                  <span className="material-symbols-outlined text-white/60">trending_up</span>
+                </div>
+                <div className="h-28 col-span-2 bg-white/10 rounded-lg flex flex-col p-4 gap-2 hover:bg-white/20 transition-colors">
+                  <div className="h-2 w-2/3 bg-white/30 rounded"></div>
+                  <div className="h-2 w-1/2 bg-white/20 rounded"></div>
+                  <div className="mt-auto flex justify-between">
+                    <div className="h-4 w-4 bg-white/30 rounded-full"></div>
+                    <div className="h-4 w-4 bg-white/30 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature 2: Open Source */}
+        <div className="md:col-span-2 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex items-center justify-between group backdrop-blur-sm hover:border-primary/30 transition-colors">
+          <div>
+            <span className="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform">terminal</span>
+            <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Open Source</h3>
+            <p className="text-slate-500 dark:text-slate-400 text-sm">Transparent and community-driven. Built for the web by developers.</p>
+          </div>
+          <div className="hidden sm:block text-slate-200 dark:text-indigo-900/50 group-hover:text-indigo-800/50 transition-colors">
+            <span className="material-symbols-outlined text-8xl">code_blocks</span>
+          </div>
+        </div>
+
+        {/* Feature 3: Performance */}
+        <div className="md:col-span-1 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex flex-col justify-center text-center backdrop-blur-sm hover:border-primary/30 transition-colors group">
+          <span className="material-symbols-outlined text-primary text-4xl mb-4 group-hover:animate-pulse">bolt</span>
+          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Fast Performance</h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Zero bloat. Sub-second load times on older hardware.</p>
+        </div>
+
+        {/* Feature 4: Sidebar */}
+        <div className="md:col-span-1 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex flex-col justify-center text-center backdrop-blur-sm hover:border-primary/30 transition-colors group">
+          <span className="material-symbols-outlined text-primary text-4xl mb-4 group-hover:-translate-x-1 transition-transform">side_navigation</span>
+          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Sidebar Control</h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Clean, minimalist sidebar for focus.</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Features;
