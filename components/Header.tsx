@@ -29,15 +29,8 @@ const Header: React.FC = () => {
         {/* Actions */}
         <div className="flex items-center gap-4">
           <button className="hidden sm:flex px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-accent-purple transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95">
-            Get Started
+            Join the Beta
           </button>
-          <div className="size-10 rounded-full bg-slate-200 dark:bg-indigo-900/50 overflow-hidden border border-slate-300 dark:border-white/10 hover:border-primary/50 transition-colors cursor-pointer">
-            <img
-              className="w-full h-full object-cover"
-              alt="User avatar"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4WH8FEaZCvMbauC10MeWNiUj3NvUVLoAjCNT-4OKG4cYRxhaJy2DgK16nFq_mAmpjKGB64HS7Ra4UnkPZLhdSJk4p2D7ZHnVz8Vp9FKj_6YUO6oXAaUMAOox2bf5rybmDhIA-WiBHIeBU81ax-7NXl3Y3SHJRUiUUydBuckZBTfBlAUjG5f67FtfAzdfLzSeZrVxLntUELlzY0sWMEdyJKPtw82AfTYswBrRG9JhYuNtkRpWez2ho6_BI5IC4OVPbMpwyKEenB1M"
-            />
-          </div>
         </div>
       </div>
     </header>

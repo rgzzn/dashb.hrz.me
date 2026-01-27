@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
               <img src="/assets/logo.png" alt="DashB Logo" className="w-6 h-6" />
-              <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB</span>
+              <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB | BETA</span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
               The modern workspace for the productivity-obsessed.
@@ -40,12 +40,12 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 dark:text-slate-600 text-xs">
-            © 2024 DashB. Open source under MIT License.
+            © 2026 HRZ. Open source under MIT License.
           </p>
           <div className="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-600">
             <span>Built with</span>
             <HeartIcon className="size-3 text-red-400 animate-pulse fill-red-400" />
-            <span>by the community</span>
+            <span>by Luca Ragazzini</span>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
         </span>
-        v2.0 Beta for tvOS is live
+        v1.0 Beta for tvOS is live on TestFlight
       </div>
 
       {/* Headline */}
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
         <button className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95">
-          Download for tvOS
+          Be a tester!
         </button>
         <button className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-indigo-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-indigo-900/60 transition-colors active:scale-95">
           <CodeBracketIcon className="size-6" />
