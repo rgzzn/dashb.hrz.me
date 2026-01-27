@@ -1,4 +1,5 @@
 import React from 'react';
+import { ShareIcon, EnvelopeIcon, HeartIcon } from '@heroicons/react/24/outline'; // HeartIcon is actually outline by default, for filled use appropriate import or className
 
 const Footer: React.FC = () => {
   return (
@@ -8,9 +9,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
-              <div className="size-6 bg-gradient-to-br from-primary to-indigo-700 rounded flex items-center justify-center text-white">
-                <span className="material-symbols-outlined text-xs">auto_awesome</span>
-              </div>
+              <img src="/assets/logo.png" alt="DashB Logo" className="w-6 h-6" />
               <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB</span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
@@ -30,10 +29,10 @@ const Footer: React.FC = () => {
           {/* Social Icons */}
           <div className="flex gap-4">
             <a href="#" className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20">
-              <span className="material-symbols-outlined text-xl">share</span>
+              <ShareIcon className="size-5" />
             </a>
             <a href="#" className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20">
-              <span className="material-symbols-outlined text-xl">mail</span>
+              <EnvelopeIcon className="size-5" />
             </a>
           </div>
         </div>
@@ -45,7 +44,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-600">
             <span>Built with</span>
-            <span className="material-symbols-outlined text-xs text-red-400 animate-pulse">favorite</span>
+            <HeartIcon className="size-3 text-red-400 animate-pulse fill-red-400" />
             <span>by the community</span>
           </div>
         </div>

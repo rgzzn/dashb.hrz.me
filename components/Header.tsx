@@ -5,10 +5,9 @@ const Header: React.FC = () => {
     <header className="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-white/5 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo Area */}
+      {/* Logo Area */}
         <div className="flex items-center gap-2 cursor-pointer group">
-          <div className="size-8 bg-gradient-to-br from-primary to-indigo-700 rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
-            <span className="material-symbols-outlined text-xl">auto_awesome</span>
-          </div>
+          <img src="/assets/logo.png" alt="DashB Logo" className="w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
           <h2 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-secondary group-hover:text-primary transition-colors">
             DashB
           </h2>

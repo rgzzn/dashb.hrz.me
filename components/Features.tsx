@@ -1,4 +1,14 @@
 import React from 'react';
+import { 
+  SparklesIcon, 
+  Squares2X2Icon, 
+  SunIcon, 
+  ArrowTrendingUpIcon, 
+  CommandLineIcon, 
+  CodeBracketIcon, 
+  BoltIcon, 
+  ViewColumnsIcon 
+} from '@heroicons/react/24/outline';
 
 const Features: React.FC = () => {
   return (
@@ -16,12 +26,12 @@ const Features: React.FC = () => {
         {/* Large Feature Card */}
         <div className="md:col-span-2 md:row-span-2 rounded-2xl p-8 bg-gradient-to-br from-primary via-accent-purple to-indigo-700 text-white flex flex-col justify-between overflow-hidden relative group shadow-2xl shadow-primary/20 transition-all hover:shadow-primary/40">
           <div className="absolute -right-12 -top-12 opacity-20 group-hover:scale-110 transition-transform duration-700">
-            <span className="material-symbols-outlined text-[240px]">auto_awesome</span>
+            <SparklesIcon className="size-[240px]" />
           </div>
           
           <div className="z-10">
             <div className="size-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 border border-white/30">
-              <span className="material-symbols-outlined text-4xl">dashboard</span>
+              <Squares2X2Icon className="size-9 text-white" />
             </div>
             <h3 className="text-3xl font-bold mb-4">Personalized Widgets</h3>
             <p className="text-secondary/80 text-lg opacity-90 max-w-xs">
@@ -33,10 +43,10 @@ const Features: React.FC = () => {
             <div className="bg-indigo-950/30 rounded-xl p-4 backdrop-blur-xl border border-white/20 shadow-2xl">
               <div className="grid grid-cols-2 gap-3">
                 <div className="h-14 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
-                  <span className="material-symbols-outlined text-white/60">partly_cloudy_day</span>
+                  <SunIcon className="size-6 text-white/60" />
                 </div>
                 <div className="h-14 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
-                  <span className="material-symbols-outlined text-white/60">trending_up</span>
+                  <ArrowTrendingUpIcon className="size-6 text-white/60" />
                 </div>
                 <div className="h-28 col-span-2 bg-white/10 rounded-lg flex flex-col p-4 gap-2 hover:bg-white/20 transition-colors">
                   <div className="h-2 w-2/3 bg-white/30 rounded"></div>
@@ -54,25 +64,29 @@ const Features: React.FC = () => {
         {/* Feature 2: Open Source */}
         <div className="md:col-span-2 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex items-center justify-between group backdrop-blur-sm hover:border-primary/30 transition-colors">
           <div>
-            <span className="material-symbols-outlined text-primary text-3xl mb-4 group-hover:scale-110 transition-transform">terminal</span>
+            <CommandLineIcon className="size-9 text-primary mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Open Source</h3>
             <p className="text-slate-500 dark:text-slate-400 text-sm">Transparent and community-driven. Built for the web by developers.</p>
           </div>
           <div className="hidden sm:block text-slate-200 dark:text-indigo-900/50 group-hover:text-indigo-800/50 transition-colors">
-            <span className="material-symbols-outlined text-8xl">code_blocks</span>
+            <CodeBracketIcon className="size-24" />
           </div>
         </div>
 
         {/* Feature 3: Performance */}
         <div className="md:col-span-1 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex flex-col justify-center text-center backdrop-blur-sm hover:border-primary/30 transition-colors group">
-          <span className="material-symbols-outlined text-primary text-4xl mb-4 group-hover:animate-pulse">bolt</span>
+          <div className="flex justify-center">
+            <BoltIcon className="size-10 text-primary mb-4 group-hover:animate-pulse" />
+          </div>
           <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Fast Performance</h3>
           <p className="text-sm text-slate-500 dark:text-slate-400">Zero bloat. Sub-second load times on older hardware.</p>
         </div>
 
         {/* Feature 4: Sidebar */}
         <div className="md:col-span-1 rounded-2xl p-8 bg-white dark:bg-indigo-950/20 border border-slate-200 dark:border-white/5 flex flex-col justify-center text-center backdrop-blur-sm hover:border-primary/30 transition-colors group">
-          <span className="material-symbols-outlined text-primary text-4xl mb-4 group-hover:-translate-x-1 transition-transform">side_navigation</span>
+          <div className="flex justify-center">
+            <ViewColumnsIcon className="size-10 text-primary mb-4 group-hover:-translate-x-1 transition-transform" />
+          </div>
           <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Sidebar Control</h3>
           <p className="text-sm text-slate-500 dark:text-slate-400">Clean, minimalist sidebar for focus.</p>
         </div>
