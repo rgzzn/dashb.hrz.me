@@ -15,7 +15,7 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {['Features', 'GitHub', 'Docs', 'Apple TV'].map((item) => (
+          {['Funzionalità', 'GitHub', 'Documentazione', 'Apple TV'].map((item) => (
             <a
               key={item}
               href="#"
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         {/* Actions */}
         <div className="flex items-center gap-4">
           <button className="hidden sm:flex px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-accent-purple transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95">
-            Join the Beta
+            Entra nella Beta
           </button>
         </div>
       </div>

@@ -10,30 +10,30 @@ const Hero: React.FC = () => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
         </span>
-        v1.0 Beta for tvOS is live on TestFlight
+        v1.0 Beta per tvOS è disponibile su TestFlight
       </div>
 
       {/* Headline */}
       <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 max-w-4xl mx-auto text-slate-900 dark:text-secondary animate-fade-in-up">
-        Your Apple TV Dashboard,{' '}
+        La tua Dashboard per Apple TV,{' '}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400">
-          Reimagined.
+          Reimmaginata.
         </span>
       </h1>
 
       {/* Subhead */}
       <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-        DashB is the open-source personal dashboard designed for speed, privacy, and ultimate customization on the big screen. Organize your digital life in one place.
+        DashB è la dashboard personale open-source progettata per velocità, privacy e massima personalizzazione sul grande schermo. Organizza la tua vita digitale in un unico posto.
       </p>
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
         <button className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95">
-          Be a tester!
+          Diventa un tester!
         </button>
         <button className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-indigo-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-indigo-900/60 transition-colors active:scale-95">
           <CodeBracketIcon className="size-6" />
-          View on GitHub
+          Vedi su GitHub
         </button>
       </div>
 

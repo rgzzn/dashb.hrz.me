@@ -13,13 +13,13 @@ const Footer: React.FC = () => {
               <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB | BETA</span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
-              The modern workspace for the productivity-obsessed.
+              Lo spazio di lavoro moderno per gli ossessionati della produttività.
             </p>
           </div>
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
-            {['Privacy Policy', 'Terms', 'Changelog', 'Support', 'Status'].map((link) => (
+            {['Privacy Policy', 'Termini', 'Changelog', 'Supporto', 'Stato'].map((link) => (
               <a key={link} href="#" className="hover:text-primary transition-colors">
                 {link}
               </a>
@@ -40,12 +40,12 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 dark:text-slate-600 text-xs">
-            © 2026 HRZ. Open source under MIT License.
+            © 2026 HRZ. Open source sotto licenza MIT.
           </p>
           <div className="flex items-center gap-2 text-xs text-slate-400 dark:text-slate-600">
-            <span>Built with</span>
+            <span>Costruito con</span>
             <HeartIcon className="size-3 text-red-400 animate-pulse fill-red-400" />
-            <span>by Luca Ragazzini</span>
+            <span>da Luca Ragazzini</span>
           </div>
         </div>
       </div>

@@ -15,10 +15,10 @@ const Features: React.FC = () => {
     <section className="max-w-7xl mx-auto px-6 py-24">
       <div className="flex flex-col gap-4 mb-12">
         <h2 className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-secondary">
-          Built for Modern Productivity
+          Costruito per la produttività moderna
         </h2>
         <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
-          Experience a bento-style layout that organizes your digital life into beautiful, functional widgets optimized for TV interaction.
+          Sperimenta un layout in stile bento che organizza la tua vita digitale in widget belli e funzionali, ottimizzati per l'interazione TV.
         </p>
       </div>
 
@@ -33,9 +33,9 @@ const Features: React.FC = () => {
             <div className="size-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 border border-white/30">
               <Squares2X2Icon className="size-9 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-4">Personalized Widgets</h3>
+            <h3 className="text-3xl font-bold mb-4">Widget personalizzati</h3>
             <p className="text-secondary/80 text-lg opacity-90 max-w-xs">
-              Your data, your way. Drag, drop, and configure dozens of widgets for weather, stocks, crypto, and more directly on your TV.
+              I tuoi dati, a modo tuo. Trascina, rilascia e configura dozzine di widget per meteo, azioni, criptovalute e altro direttamente sulla tua TV.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const Features: React.FC = () => {
           <div>
             <CommandLineIcon className="size-9 text-primary mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Open Source</h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">Transparent and community-driven. Built for the web by developers.</p>
+            <p className="text-slate-500 dark:text-slate-400 text-sm">Trasparente e guidato dalla community. Costruito per il web da sviluppatori.</p>
           </div>
           <div className="hidden sm:block text-slate-200 dark:text-indigo-900/50 group-hover:text-indigo-800/50 transition-colors">
             <CodeBracketIcon className="size-24" />
@@ -78,8 +78,8 @@ const Features: React.FC = () => {
           <div className="flex justify-center">
             <BoltIcon className="size-10 text-primary mb-4 group-hover:animate-pulse" />
           </div>
-          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Fast Performance</h3>
-          <p className="text-sm text-slate-500 dark:text-slate-400">Zero bloat. Sub-second load times on older hardware.</p>
+          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Prestazioni veloci</h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Zero bloat. Tempi di caricamento istantanei su hardware datato.</p>
         </div>
 
         {/* Feature 4: Sidebar */}
@@ -87,8 +87,8 @@ const Features: React.FC = () => {
           <div className="flex justify-center">
             <ViewColumnsIcon className="size-10 text-primary mb-4 group-hover:-translate-x-1 transition-transform" />
           </div>
-          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Sidebar Control</h3>
-          <p className="text-sm text-slate-500 dark:text-slate-400">Clean, minimalist sidebar for focus.</p>
+          <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-secondary">Controllo barra laterale</h3>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Barra laterale pulita e minimalista per la concentrazione.</p>
         </div>
       </div>
     </section>
