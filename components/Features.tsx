@@ -1,18 +1,15 @@
 import React from 'react';
 import { 
-  CloudIcon, 
   CalendarDaysIcon, 
   NewspaperIcon, 
   QrCodeIcon, 
   ShieldCheckIcon, 
   CodeBracketIcon, 
   DevicePhoneMobileIcon, 
-  AdjustmentsHorizontalIcon,
   MoonIcon,
   Cog6ToothIcon,
   LockClosedIcon
 } from '@heroicons/react/24/outline';
-import { SunIcon } from '@heroicons/react/24/solid';
 
 const Features: React.FC = () => {
   return (
@@ -189,7 +186,7 @@ const Features: React.FC = () => {
                 {/* News Ticker Mockup */}
                 <div className="w-full px-8 absolute bottom-8 z-20 flex items-center justify-between">
                    <div className="flex flex-col gap-1 w-2/3">
-                      <div className="h-2 w-20 bg-red-500/80 rounded full mb-1"></div>
+                      <div className="h-2 w-20 bg-red-500/80 rounded-full mb-1"></div>
                       <div className="h-4 w-full bg-white/90 rounded"></div>
                       <div className="h-3 w-5/6 bg-white/50 rounded"></div>
                    </div>

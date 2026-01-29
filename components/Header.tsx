@@ -5,7 +5,6 @@ const Header: React.FC = () => {
     <header className="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-white/5 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo Area */}
-      {/* Logo Area */}
         <a href="/" className="flex items-center gap-2 cursor-pointer group">
           <img src="/assets/logo.png" alt="DashB Logo" className="w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
           <h2 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-secondary group-hover:text-primary transition-colors">
@@ -33,9 +32,14 @@ const Header: React.FC = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          <button className="hidden sm:flex px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-accent-purple transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95">
+          <a
+            href="https://github.com/rgzzn/DashB/issues/new?title=Richiesta%20accesso%20Beta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-accent-purple transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95"
+          >
             Entra nella Beta
-          </button>
+          </a>
         </div>
       </div>
     </header>
