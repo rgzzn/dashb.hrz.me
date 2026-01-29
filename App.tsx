@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
-import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
       <main className="flex-grow pt-24">
         <Hero />
         <Features />
-        <CTA />
       </main>
       <Footer />
     </div>

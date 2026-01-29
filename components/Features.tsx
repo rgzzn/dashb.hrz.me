@@ -6,10 +6,13 @@ import {
   QrCodeIcon, 
   ShieldCheckIcon, 
   CodeBracketIcon, 
-  DevicePhoneMobileIcon,
-  SunIcon,
+  DevicePhoneMobileIcon, 
+  AdjustmentsHorizontalIcon,
+  MoonIcon,
+  Cog6ToothIcon,
   LockClosedIcon
 } from '@heroicons/react/24/outline';
+import { SunIcon } from '@heroicons/react/24/solid';
 
 const Features: React.FC = () => {
   return (
@@ -33,24 +36,93 @@ const Features: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 group">
             <div className="flex-1 order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10 aspect-video bg-slate-900">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 z-0"></div>
-                 {/* Abstract UI Representation */}
-                <div className="absolute inset-8 grid grid-cols-2 gap-6">
-                  <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/20 p-6 flex flex-col justify-between">
-                     <SunIcon className="size-12 text-yellow-400" />
+                <div className="absolute inset-2 md:inset-4 grid grid-cols-12 grid-rows-6 gap-2 md:gap-3 p-3 md:p-4 bg-[#0B0C15] rounded-xl font-sans text-white overflow-hidden shadow-inner border border-white/5">
+                  
+                  {/* Top Bar: Greeting & Clock */}
+                  <div className="col-span-12 row-span-1 flex justify-between items-start px-1">
+                    <div>
+                      <h4 className="text-lg md:text-xl font-medium text-white/90">Buona sera, Luca</h4>
+                      <p className="text-xs md:text-sm text-white/60">Una bella giornata! Goditi il sole.</p>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-2xl md:text-3xl font-light tracking-wider">23:57</div>
+                      <div className="text-[10px] md:text-xs text-white/60 uppercase tracking-widest">Lunedì 26 Gennaio</div>
+                    </div>
+                  </div>
+
+                  {/* Widget 1: Weather (Left) */}
+                  <div className="col-span-4 row-span-5 bg-[#141522] rounded-xl p-3 flex flex-col justify-between border border-white/5">
+                     <div className="flex justify-between items-start">
+                        <MoonIcon className="size-8 text-white" />
+                        <div className="text-right">
+                           <div className="text-2xl font-light">3°</div>
+                           <div className="text-[10px] text-white/60">Ciel Sereno</div>
+                        </div>
+                     </div>
+                     
                      <div className="space-y-2">
-                       <div className="h-2 w-1/2 bg-white/40 rounded"></div>
-                       <div className="h-8 w-16 bg-white/90 rounded"></div>
+                        <div className="text-[10px] text-white/40 uppercase">Prossime ore</div>
+                        <div className="flex justify-between text-center">
+                           {[1, 2, 3].map((i) => (
+                             <div key={i} className="flex flex-col items-center gap-1">
+                               <CloudIcon className="size-4 text-white/80" />
+                               <span className="text-[10px]">{2+i}°</span>
+                             </div>
+                           ))}
+                        </div>
+                     </div>
+
+                     <div className="space-y-1">
+                        <div className="text-[10px] text-white/40 uppercase mb-1">Giorni</div>
+                        <div className="flex justify-between text-[10px] items-center border-b border-white/5 pb-1">
+                           <span className="text-white/80">mar</span>
+                           <CloudIcon className="size-3 text-blue-400" />
+                           <span className="opacity-60">8° 1°</span>
+                        </div>
+                        <div className="flex justify-between text-[10px] items-center">
+                           <span className="text-white/80">mer</span>
+                           <CloudIcon className="size-3 text-blue-400" />
+                           <span className="opacity-60">6° 5°</span>
+                        </div>
                      </div>
                   </div>
-                  <div className="bg-white/5 rounded-2xl backdrop-blur-md border border-white/10 p-6 space-y-3">
-                     <div className="flex items-center gap-2 mb-4">
-                        <div className="size-3 rounded-full bg-red-400"></div>
-                        <div className="h-2 w-20 bg-white/40 rounded"></div>
+
+                  {/* Widget 2: Agenda (Middle) */}
+                  <div className="col-span-4 row-span-3 flex flex-col gap-2">
+                     <div className="flex items-center gap-2 text-red-400 mb-1">
+                        <CalendarDaysIcon className="size-4" />
+                        <span className="text-sm font-medium text-white">Agenda</span>
                      </div>
-                     <div className="h-16 bg-white/10 rounded-xl"></div>
-                     <div className="h-16 bg-white/10 rounded-xl"></div>
+                     <div className="bg-[#2C201A] border-l-2 border-orange-500 rounded-lg p-2">
+                        <div className="text-[10px] font-bold text-orange-200">Preparare il render 3D</div>
+                        <div className="text-[9px] text-white/40 mt-1">08:00 - 09:00</div>
+                     </div>
+                     <div className="bg-[#2C201A] border-l-2 border-orange-500 rounded-lg p-2">
+                        <div className="text-[10px] font-bold text-orange-200">Meeting Team</div>
+                        <div className="text-[9px] text-white/40 mt-1">09:00 - 10:00</div>
+                     </div>
                   </div>
+
+                  {/* Widget 3: News (Right - Span 2 rows) */}
+                  <div className="col-span-4 row-span-5 bg-gradient-to-b from-[#1E1B2E] to-[#14121F] rounded-xl p-3 relative flex flex-col justify-end border border-white/5">
+                     <div className="absolute top-3 left-3 bg-blue-500 text-[8px] font-bold px-1.5 py-0.5 rounded text-white">FORLÌTODAY</div>
+                     <h5 className="text-sm font-bold leading-tight mb-2">Enzo Pellegrini e l'inno alla bellezza...</h5>
+                     <p className="text-[9px] text-white/50 line-clamp-3 mb-2">Mercoledì 28 gennaio, alle ore 20.30, nel salone Aurora...</p>
+                     <div className="flex justify-between items-end">
+                        <span className="text-[8px] text-white/30">Lunedì 26, 12:50</span>
+                        <div className="bg-white p-0.5 rounded">
+                           <QrCodeIcon className="size-6 text-black" />
+                        </div>
+                     </div>
+                  </div>
+
+                  {/* Settings Float */}
+                  <div className="absolute bottom-4 right-4 col-span-12 flex justify-end">
+                      <div className="size-8 bg-white/10 backdrop-blur-md rounded-lg flex items-center justify-center border border-white/10 shadow-lg">
+                        <Cog6ToothIcon className="size-5 text-white/80" />
+                      </div>
+                  </div>
+
                 </div>
               </div>
             </div>
