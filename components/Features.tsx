@@ -36,90 +36,98 @@ const Features: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12 group">
             <div className="flex-1 order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10 aspect-video bg-slate-900">
-                <div className="absolute inset-2 md:inset-4 grid grid-cols-12 grid-rows-6 gap-2 md:gap-3 p-3 md:p-4 bg-[#0B0C15] rounded-xl font-sans text-white overflow-hidden shadow-inner border border-white/5">
+                <div className="absolute inset-2 md:inset-4 grid grid-cols-12 grid-rows-6 gap-2 md:gap-3 p-3 md:p-4 bg-[#0B0C15] rounded-xl overflow-hidden shadow-inner border border-white/5">
                   
-                  {/* Top Bar: Greeting & Clock */}
-                  <div className="col-span-12 row-span-1 flex justify-between items-start px-1">
-                    <div>
-                      <h4 className="text-lg md:text-xl font-medium text-white/90">Buona sera, Luca</h4>
-                      <p className="text-xs md:text-sm text-white/60">Una bella giornata! Goditi il sole.</p>
+                  {/* Top Bar: Abstract Greeting & Clock */}
+                  <div className="col-span-12 row-span-1 flex justify-between items-center px-1">
+                    <div className="space-y-1.5">
+                      <div className="h-2 w-24 bg-white/20 rounded-full"></div>
+                      <div className="h-1.5 w-32 bg-white/10 rounded-full"></div>
                     </div>
-                    <div className="text-right">
-                      <div className="text-2xl md:text-3xl font-light tracking-wider">23:57</div>
-                      <div className="text-[10px] md:text-xs text-white/60 uppercase tracking-widest">Lunedì 26 Gennaio</div>
+                    <div className="text-right space-y-1.5 flex flex-col items-end">
+                      <div className="h-5 w-16 bg-white/20 rounded"></div>
+                      <div className="h-1.5 w-20 bg-white/10 rounded-full"></div>
                     </div>
                   </div>
 
-                  {/* Widget 1: Weather (Left) */}
-                  <div className="col-span-4 row-span-5 bg-[#141522] rounded-xl p-3 flex flex-col justify-between border border-white/5">
-                     <div className="flex justify-between items-start">
-                        <MoonIcon className="size-8 text-white" />
-                        <div className="text-right">
-                           <div className="text-2xl font-light">3°</div>
-                           <div className="text-[10px] text-white/60">Ciel Sereno</div>
+                  {/* Widget 1: Weather Abstract (Left) */}
+                  <div className="col-span-4 row-span-5 bg-[#141522] rounded-xl p-3 flex flex-col justify-between border border-white/5 relative overflow-hidden">
+                     <div className="absolute top-0 right-0 p-8 bg-blue-500/10 blur-2xl rounded-full"></div>
+                     
+                     <div className="flex justify-between items-start z-10">
+                        <MoonIcon className="size-6 text-white/80" />
+                        <div className="flex flex-col items-end gap-1">
+                           <div className="h-4 w-8 bg-white/20 rounded"></div>
+                           <div className="h-1.5 w-12 bg-white/10 rounded-full"></div>
                         </div>
                      </div>
                      
-                     <div className="space-y-2">
-                        <div className="text-[10px] text-white/40 uppercase">Prossime ore</div>
-                        <div className="flex justify-between text-center">
+                     <div className="space-y-3 z-10">
+                        <div className="h-1.5 w-16 bg-white/10 rounded-full"></div>
+                        <div className="flex justify-between gap-1">
                            {[1, 2, 3].map((i) => (
-                             <div key={i} className="flex flex-col items-center gap-1">
-                               <CloudIcon className="size-4 text-white/80" />
-                               <span className="text-[10px]">{2+i}°</span>
+                             <div key={i} className="flex flex-col items-center gap-1.5 flex-1">
+                               <div className="size-3 bg-white/10 rounded-full"></div>
+                               <div className="h-1 w-full bg-white/5 rounded-full"></div>
                              </div>
                            ))}
                         </div>
                      </div>
 
-                     <div className="space-y-1">
-                        <div className="text-[10px] text-white/40 uppercase mb-1">Giorni</div>
-                        <div className="flex justify-between text-[10px] items-center border-b border-white/5 pb-1">
-                           <span className="text-white/80">mar</span>
-                           <CloudIcon className="size-3 text-blue-400" />
-                           <span className="opacity-60">8° 1°</span>
-                        </div>
-                        <div className="flex justify-between text-[10px] items-center">
-                           <span className="text-white/80">mer</span>
-                           <CloudIcon className="size-3 text-blue-400" />
-                           <span className="opacity-60">6° 5°</span>
-                        </div>
+                     <div className="space-y-2 z-10">
+                        <div className="h-1.5 w-10 bg-white/10 rounded-full"></div>
+                        {[1, 2].map((i) => (
+                          <div key={i} className="flex items-center justify-between">
+                            <div className="h-1 w-4 bg-white/20 rounded-full"></div>
+                            <div className="size-2 bg-blue-400/50 rounded-full"></div>
+                            <div className="h-1 w-8 bg-white/10 rounded-full"></div>
+                          </div>
+                        ))}
                      </div>
                   </div>
 
-                  {/* Widget 2: Agenda (Middle) */}
+                  {/* Widget 2: Agenda Abstract (Middle) */}
                   <div className="col-span-4 row-span-3 flex flex-col gap-2">
-                     <div className="flex items-center gap-2 text-red-400 mb-1">
-                        <CalendarDaysIcon className="size-4" />
-                        <span className="text-sm font-medium text-white">Agenda</span>
+                     <div className="flex items-center gap-2 mb-0.5">
+                        <div className="size-3 rounded bg-red-400/80"></div>
+                        <div className="h-2 w-16 bg-white/20 rounded-full"></div>
                      </div>
-                     <div className="bg-[#2C201A] border-l-2 border-orange-500 rounded-lg p-2">
-                        <div className="text-[10px] font-bold text-orange-200">Preparare il render 3D</div>
-                        <div className="text-[9px] text-white/40 mt-1">08:00 - 09:00</div>
+                     <div className="bg-[#2C201A] border-l-2 border-orange-500/50 rounded-lg p-2.5 flex flex-col justify-center gap-2 flex-1 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-orange-500/5"></div>
+                        <div className="h-2 w-3/4 bg-orange-200/20 rounded-full relative z-10"></div>
+                        <div className="h-1.5 w-1/2 bg-white/5 rounded-full relative z-10"></div>
                      </div>
-                     <div className="bg-[#2C201A] border-l-2 border-orange-500 rounded-lg p-2">
-                        <div className="text-[10px] font-bold text-orange-200">Meeting Team</div>
-                        <div className="text-[9px] text-white/40 mt-1">09:00 - 10:00</div>
+                     <div className="bg-[#2C201A] border-l-2 border-orange-500/50 rounded-lg p-2.5 flex flex-col justify-center gap-2 flex-1 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-orange-500/5"></div>
+                        <div className="h-2 w-2/3 bg-orange-200/20 rounded-full relative z-10"></div>
+                        <div className="h-1.5 w-1/3 bg-white/5 rounded-full relative z-10"></div>
                      </div>
                   </div>
 
-                  {/* Widget 3: News (Right - Span 2 rows) */}
-                  <div className="col-span-4 row-span-5 bg-gradient-to-b from-[#1E1B2E] to-[#14121F] rounded-xl p-3 relative flex flex-col justify-end border border-white/5">
-                     <div className="absolute top-3 left-3 bg-blue-500 text-[8px] font-bold px-1.5 py-0.5 rounded text-white">FORLÌTODAY</div>
-                     <h5 className="text-sm font-bold leading-tight mb-2">Enzo Pellegrini e l'inno alla bellezza...</h5>
-                     <p className="text-[9px] text-white/50 line-clamp-3 mb-2">Mercoledì 28 gennaio, alle ore 20.30, nel salone Aurora...</p>
-                     <div className="flex justify-between items-end">
-                        <span className="text-[8px] text-white/30">Lunedì 26, 12:50</span>
-                        <div className="bg-white p-0.5 rounded">
-                           <QrCodeIcon className="size-6 text-black" />
+                  {/* Widget 3: News Abstract (Right) */}
+                  <div className="col-span-4 row-span-5 bg-gradient-to-b from-[#1E1B2E] to-[#14121F] rounded-xl p-3 relative flex flex-col justify-end border border-white/5 overflow-hidden group">
+                     {/* Abstract Image Background */}
+                     <div className="absolute inset-0 bg-white/5 mix-blend-overlay"></div>
+                     <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-blue-500/10 to-transparent"></div>
+
+                     <div className="relative z-10 space-y-2">
+                        <div className="h-3 w-8 bg-blue-500 rounded-sm mb-1"></div>
+                        <div className="h-3 w-full bg-white/20 rounded-md"></div>
+                        <div className="h-3 w-2/3 bg-white/20 rounded-md mb-2"></div>
+                        
+                        <div className="flex justify-between items-end mt-2">
+                           <div className="h-1.5 w-16 bg-white/10 rounded-full"></div>
+                           <div className="size-6 bg-white/90 rounded p-0.5 grid place-items-center">
+                              <QrCodeIcon className="size-5 text-[#0B0C15]" />
+                           </div>
                         </div>
                      </div>
                   </div>
 
-                  {/* Settings Float */}
+                  {/* Settings Abstract */}
                   <div className="absolute bottom-4 right-4 col-span-12 flex justify-end">
-                      <div className="size-8 bg-white/10 backdrop-blur-md rounded-lg flex items-center justify-center border border-white/10 shadow-lg">
-                        <Cog6ToothIcon className="size-5 text-white/80" />
+                      <div className="size-8 bg-white/5 backdrop-blur-md rounded-lg flex items-center justify-center border border-white/5">
+                        <Cog6ToothIcon className="size-4 text-white/40" />
                       </div>
                   </div>
 
