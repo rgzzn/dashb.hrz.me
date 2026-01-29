@@ -15,13 +15,18 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {['Funzionalità', 'GitHub', 'Documentazione', 'Apple TV'].map((item) => (
+          {[
+            { name: 'Funzionalità', href: '#features' },
+            { name: 'GitHub', href: 'https://github.com/rgzzn/DashB' }
+          ].map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.name}
+              href={item.href}
+              target={item.name === 'GitHub' ? '_blank' : undefined}
+              rel={item.name === 'GitHub' ? 'noopener noreferrer' : undefined}
               className="text-sm font-medium hover:text-primary transition-colors text-slate-600 dark:text-slate-400"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </nav>

@@ -31,10 +31,15 @@ const Hero: React.FC = () => {
         <button className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95">
           Diventa un tester!
         </button>
-        <button className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-indigo-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-indigo-900/60 transition-colors active:scale-95">
+        <a 
+          href="https://github.com/rgzzn/DashB"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-indigo-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-indigo-900/60 transition-colors active:scale-95"
+        >
           <CodeBracketIcon className="size-6" />
           Vedi su GitHub
-        </button>
+        </a>
       </div>
 
       {/* Dashboard Preview Image */}
