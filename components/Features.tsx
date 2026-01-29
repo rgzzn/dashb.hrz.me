@@ -1,13 +1,14 @@
 import React from 'react';
 import { 
-  Squares2X2Icon, 
-  CommandLineIcon, 
-  CodeBracketIcon, 
-  BoltIcon, 
   CloudIcon, 
+  CalendarDaysIcon, 
+  NewspaperIcon, 
+  QrCodeIcon, 
   ShieldCheckIcon, 
-  DevicePhoneMobileIcon, 
-  AdjustmentsHorizontalIcon 
+  CodeBracketIcon, 
+  DevicePhoneMobileIcon,
+  SunIcon,
+  LockClosedIcon
 } from '@heroicons/react/24/outline';
 
 const Features: React.FC = () => {
@@ -19,48 +20,56 @@ const Features: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in-up">
           <h2 className="text-base text-primary font-bold tracking-wide uppercase mb-3">Caratteristiche</h2>
           <p className="text-3xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-secondary mb-6">
-            Tutto ciò che ti serve, <br/> direttamente sul grande schermo.
+            Dashboard nativa per la tua Apple TV.
           </p>
           <p className="text-slate-600 dark:text-slate-400 text-lg">
-            DashB trasforma la tua Apple TV in un hub informativo centrale. 
-            Progettato meticolosamente per l'esperienza da salotto.
+            Sviluppata interamente in SwiftUI per garantire prestazioni massime e un'integrazione perfetta nel tuo salotto.
           </p>
         </div>
 
         <div className="flex flex-col gap-24">
           
-          {/* Feature Block 1: Widgets & Customization */}
+          {/* Feature Block 1: Smart Info (Weather & Calendar) */}
           <div className="flex flex-col md:flex-row items-center gap-12 group">
             <div className="flex-1 order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10 aspect-video bg-slate-900">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 z-0"></div>
                  {/* Abstract UI Representation */}
-                <div className="absolute inset-8 grid grid-cols-4 grid-rows-2 gap-4 opacity-80 group-hover:opacity-100 transition-opacity duration-700">
-                  <div className="col-span-2 row-span-2 bg-white/10 rounded-xl backdrop-blur-md border border-white/20 animate-pulse-slow"></div>
-                  <div className="col-span-1 bg-white/10 rounded-xl backdrop-blur-md border border-white/20"></div>
-                  <div className="col-span-1 bg-primary/20 rounded-xl backdrop-blur-md border border-primary/30"></div>
-                  <div className="col-span-2 bg-white/5 rounded-xl backdrop-blur-md border border-white/10"></div>
+                <div className="absolute inset-8 grid grid-cols-2 gap-6">
+                  <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/20 p-6 flex flex-col justify-between">
+                     <SunIcon className="size-12 text-yellow-400" />
+                     <div className="space-y-2">
+                       <div className="h-2 w-1/2 bg-white/40 rounded"></div>
+                       <div className="h-8 w-16 bg-white/90 rounded"></div>
+                     </div>
+                  </div>
+                  <div className="bg-white/5 rounded-2xl backdrop-blur-md border border-white/10 p-6 space-y-3">
+                     <div className="flex items-center gap-2 mb-4">
+                        <div className="size-3 rounded-full bg-red-400"></div>
+                        <div className="h-2 w-20 bg-white/40 rounded"></div>
+                     </div>
+                     <div className="h-16 bg-white/10 rounded-xl"></div>
+                     <div className="h-16 bg-white/10 rounded-xl"></div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="flex-1 order-1 md:order-2">
-              <div className="p-2 inline-block rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-300 mb-6">
-                <Squares2X2Icon className="size-8" />
+              <div className="p-2 inline-block rounded-lg bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 mb-6">
+                <CalendarDaysIcon className="size-8" />
               </div>
               <h3 className="text-3xl font-bold text-slate-900 dark:text-secondary mb-4">
-                Widget Modulari
+                La tua giornata, a colpo d'occhio
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-lg mb-6 leading-relaxed">
-                Costruisci la tua dashboard ideale con widget trascinabili. 
-                Dai un'occhiata al meteo, controlla i tuoi investimenti o segui le ultime notizie, 
-                tutto organizzato in una griglia bento elegante e reattiva.
+                Unisci i tuoi impegni e le previsioni meteo in un'unica vista elegante. DashB si aggiorna automaticamente per tenerti sempre informato.
               </p>
               <ul className="space-y-3">
                 {[
-                  'Drag & Drop intuitivo',
-                  'Supporto per Meteo, Stocks, Crypto',
-                  'Layout salvati autmaticamente',
-                  'Design adattivo per ogni schermo'
+                  'Meteo powered by  WeatherKit',
+                  'Google Calendar & Outlook',
+                  'Previsioni a 5 giorni',
+                  'Supporto eventi All-day'
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-slate-700 dark:text-slate-300">
                     <div className="size-2 rounded-full bg-primary" />
@@ -71,88 +80,85 @@ const Features: React.FC = () => {
             </div>
           </div>
 
-          {/* Feature Block 2: Performance */}
+          {/* Feature Block 2: News & QR Code */}
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
               <div className="p-2 inline-block rounded-lg bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300 mb-6">
-                <BoltIcon className="size-8" />
+                <NewspaperIcon className="size-8" />
               </div>
               <h3 className="text-3xl font-bold text-slate-900 dark:text-secondary mb-4">
-                Prestazioni Native
+                Notizie in tempo reale
               </h3>
               <p className="text-slate-600 dark:text-slate-400 text-lg mb-6 leading-relaxed">
-                Niente web view lente o lag. DashB è ottimizzato per l'hardware di Apple TV, 
-                garantendo animazioni fluide a 60fps e tempi di avvio istantanei.
+                Resta aggiornato con un ticker di notizie RSS personalizzabile. 
+                Vedi qualcosa che ti interessa? Scansiona il QR code e leggi l'articolo completo sul tuo telefono.
               </p>
-               <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="p-4 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
-                  <div className="text-2xl font-black text-slate-900 dark:text-white mb-1">60fps</div>
-                  <div className="text-sm text-slate-500">Fluidità UI</div>
-                </div>
-                <div className="p-4 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
-                  <div className="text-2xl font-black text-slate-900 dark:text-white mb-1">&lt;1s</div>
-                  <div className="text-sm text-slate-500">Avvio App</div>
+               <div className="flex gap-4 mt-4">
+                <div className="flex items-center gap-3 p-4 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
+                  <QrCodeIcon className="size-8 text-primary" />
+                  <div>
+                    <div className="font-bold text-slate-900 dark:text-white">Scan & Read</div>
+                    <div className="text-xs text-slate-500">Passa alla lettura mobile</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex-1 relative">
-               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 blur-2xl rounded-full opacity-50"></div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10 bg-slate-100 dark:bg-slate-900 p-8 flex items-center justify-center aspect-square md:aspect-video">
-                 <BoltIcon className="size-32 text-emerald-500 animate-pulse" />
+            <div className="flex-1 order-1 md:order-2">
+               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-white/10 aspect-video bg-slate-900 flex items-center justify-center">
+                <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+                {/* News Ticker Mockup */}
+                <div className="w-full px-8 absolute bottom-8 z-20 flex items-center justify-between">
+                   <div className="flex flex-col gap-1 w-2/3">
+                      <div className="h-2 w-20 bg-red-500/80 rounded full mb-1"></div>
+                      <div className="h-4 w-full bg-white/90 rounded"></div>
+                      <div className="h-3 w-5/6 bg-white/50 rounded"></div>
+                   </div>
+                   <div className="size-16 bg-white p-1 rounded-lg">
+                      <div className="w-full h-full bg-slate-900 rounded-sm grid place-items-center">
+                         <QrCodeIcon className="size-10 text-white" />
+                      </div>
+                   </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-50" alt="News background"/>
               </div>
             </div>
           </div>
 
-          {/* Feature Block 3: Privacy & Open Source */}
+          {/* Feature Block 3: Tech & Security */}
           <div className="bg-slate-900 rounded-3xl p-8 md:p-16 text-center text-white relative overflow-hidden group">
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-600/30 via-transparent to-purple-600/30"></div>
             
             <div className="relative z-10 max-w-3xl mx-auto">
               <ShieldCheckIcon className="size-16 mx-auto mb-6 text-indigo-400" />
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">Privacy al primo posto. Open Source per sempre.</h3>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">Sicuro. Open Source. Swift.</h3>
               <p className="text-lg text-slate-300 mb-10 leading-relaxed">
-                I tuoi dati rimangono sulla tua TV. Nessun tracciamento, nessuna pubblicità, nessun costo nascosto. 
-                Il codice è completamente aperto e verificabile da chiunque su GitHub.
+                Costruito con tecnologie native Apple per la massima affidabilità. 
+                I tuoi token di accesso sono protetti nel Keychain e il codice è accessibile a tutti.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                 <a href="https://github.com/rgzzn/DashB" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition-colors">
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 text-left">
+                {[
+                  { title: 'SwiftUI', desc: 'Interfaccia nativa', icon: DevicePhoneMobileIcon },
+                  { title: 'Keychain', desc: 'Dati criptati', icon: LockClosedIcon },
+                  { title: 'OAuth', desc: 'Login sicuro', icon: ShieldCheckIcon },
+                  { title: 'Open Source', desc: 'MIT License', icon: CodeBracketIcon },
+                ].map((item, i) => (
+                  <div key={i} className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                    <item.icon className="size-6 text-indigo-400 mb-2" />
+                    <div className="font-bold text-sm">{item.title}</div>
+                    <div className="text-xs text-slate-400">{item.desc}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex justify-center">
+                 <a href="https://github.com/rgzzn/DashB" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold hover:bg-slate-100 transition-colors shadow-lg hover:shadow-indigo-500/20">
                   <CodeBracketIcon className="size-5" />
-                  Controlla il Codice
+                  Esplora su GitHub
                 </a>
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-lg font-bold border border-white/10 backdrop-blur-sm">
-                  <CloudIcon className="size-5" />
-                  Nessun Cloud Esterno
-                </div>
               </div>
             </div>
-          </div>
-
-          {/* Grid of Smaller Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-             {[
-              {
-                icon: AdjustmentsHorizontalIcon,
-                title: 'Personalizzazione',
-                desc: 'Cambia temi, colori e layout per adattarli al tuo stile.'
-              },
-              {
-                icon: DevicePhoneMobileIcon,
-                title: 'Responsive',
-                desc: 'Funziona perfettamente su TV, ma si adatta anche schermi più piccoli.'
-              },
-              {
-                icon: CommandLineIcon,
-                title: 'Developer Friendly',
-                desc: 'Costruisci i tuoi widget personalizzati usando semplici API.'
-              }
-             ].map((feature, idx) => (
-               <div key={idx} className="bg-white dark:bg-white/5 p-8 rounded-2xl border border-slate-200 dark:border-white/10 hover:border-primary/50 transition-colors group">
-                 <feature.icon className="size-10 text-slate-400 group-hover:text-primary transition-colors mb-4" />
-                 <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{feature.title}</h4>
-                 <p className="text-slate-500 dark:text-slate-400">{feature.desc}</p>
-               </div>
-             ))}
           </div>
 
         </div>
