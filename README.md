@@ -11,6 +11,22 @@ This project is a clone of the Apple TV+ dashboard, built with React, Vite, and 
 *   **Styling with Tailwind CSS:** The project uses Tailwind CSS for a utility-first styling approach.
 *   **Fast Development with Vite:** Vite provides a fast and lean development experience for modern web projects.
 
+## Proposed Feature: Suggerimenti intelligenti del giorno
+
+Una sola funzionalità “smart” e proattiva, conservata e potenziata: un riepilogo giornaliero che unisce meteo, agenda e notizie in un’unica vista. L’obiettivo è offrire un’istantanea utile e immediata per la giornata, ottimizzata per la fruizione su Apple TV.
+
+### Cosa include
+
+*   **Riepilogo mattutino** con meteo attuale + prime ore, primi eventi dell’agenda e 3 headline dai feed RSS.
+*   **Sintesi compatta e leggibile**: layout a tre colonne con gerarchie visive chiare, icone e micro‑indicatori per priorità e imminenza.
+*   **Aggiornamenti automatici** programmati per fascia oraria (mattina, pranzo, sera) e refresh manuale rapido.
+
+### Dettagli tecnici (linea guida)
+
+*   **SummaryView composita** che aggrega i dati da `WeatherModel`, `CalendarManager` e `RSSModel`.
+*   **Orchestrazione dei refresh** con task periodici basati su `@Observable` + `Task` programmati, oppure `BackgroundTasks` per riallineare i dati quando l’app è in background.
+*   **Strategia di caching** con scadenze differenziate: meteo (breve), agenda (medio), RSS (medio‑breve) per ridurre chiamate e mantenere reattività.
+
 ## Getting Started
 
 ### Prerequisites
