@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         {/* Actions */}
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/rgzzn/DashB/issues/new?title=Richiesta%20accesso%20Beta"
+            href="https://testflight.apple.com/join/hBXZH1qd"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold hover:bg-accent-purple transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95"

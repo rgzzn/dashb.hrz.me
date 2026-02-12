@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="relative max-w-7xl mx-auto px-6 py-12 md:py-24 text-center hero-gradient">
       {/* Badge */}
       <a
-        href="https://github.com/rgzzn/DashB/releases"
+        href="https://testflight.apple.com/join/hBXZH1qd"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-6 border border-primary/20 hover:bg-primary/20 transition-colors"
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
         <a
-          href="https://github.com/rgzzn/DashB/issues/new?title=Richiesta%20accesso%20Beta"
+          href="https://testflight.apple.com/join/hBXZH1qd"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95"
