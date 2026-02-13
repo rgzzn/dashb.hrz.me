@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ShareIcon, EnvelopeIcon, HeartIcon } from '@heroicons/react/24/outline';
 
 const Footer: React.FC = () => {
@@ -8,10 +9,10 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <div className="flex items-center gap-2">
-              <img src="/assets/logo.png" alt="DashB Logo" className="w-6 h-6" />
-              <span className="font-bold text-xl text-slate-900 dark:text-secondary">DashB | BETA</span>
-            </div>
+            <Link to="/" className="flex items-center gap-2 group">
+              <img src="/assets/logo.png" alt="DashB Logo" className="w-6 h-6 group-hover:scale-110 transition-transform" />
+              <span className="font-bold text-xl text-slate-900 dark:text-secondary group-hover:text-primary transition-colors">DashB | BETA</span>
+            </Link>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
               Lo spazio di lavoro moderno per gli ossessionati della produttività.
             </p>
@@ -19,8 +20,8 @@ const Footer: React.FC = () => {
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             {[
-              { label: 'Privacy Policy', href: 'https://github.com/rgzzn/DashB/blob/main/README.md' },
               { label: 'Termini', href: 'https://github.com/rgzzn/DashB/blob/main/LICENSE' },
               { label: 'Changelog', href: 'https://github.com/rgzzn/DashB/releases' },
               { label: 'Supporto', href: 'https://github.com/rgzzn/DashB/issues' },

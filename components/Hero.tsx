@@ -1,5 +1,6 @@
 import React from 'react';
 import { CodeBracketIcon } from '@heroicons/react/24/outline';
+import Carousel from './Carousel';
 
 const Hero: React.FC = () => {
   return (
@@ -56,11 +57,11 @@ const Hero: React.FC = () => {
       <div className="relative max-w-5xl mx-auto mt-10 p-2 bg-slate-300/20 dark:bg-indigo-500/5 rounded-2xl border border-slate-300 dark:border-white/10 shadow-2xl backdrop-blur-sm group animate-fade-in-up" style={{ animationDelay: '300ms' }}>
         <div className="rounded-xl overflow-hidden shadow-inner bg-slate-900 aspect-video relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-indigo-500/10 z-10 pointer-events-none"></div>
-          <img
-            className="w-full h-full object-cover transform group-hover:scale-[1.01] transition-transform duration-700"
-            alt="Dashboard interface preview"
-            src="/assets/screenshot-1.png"
-          />
+          <Carousel images={[
+            '/assets/app_showcase_1.png',
+            '/assets/app_showcase_2.png',
+            '/assets/app_showcase_3.png'
+          ]} />
         </div>
       </div>
     </section>
