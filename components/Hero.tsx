@@ -58,9 +58,12 @@ const Hero: React.FC = () => {
         <div className="rounded-xl overflow-hidden shadow-inner bg-slate-900 aspect-video relative">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-indigo-500/10 z-10 pointer-events-none"></div>
           <Carousel images={[
-            '/assets/app_showcase_1.png',
-            '/assets/app_showcase_2.png',
-            '/assets/app_showcase_3.png'
+            '/assets/simulator-1.png',
+            '/assets/simulator-2.png',
+            '/assets/simulator-3.png',
+            '/assets/simulator-4.png',
+            '/assets/simulator-5.png',
+            '/assets/simulator-6.png'
           ]} />
         </div>
       </div>
