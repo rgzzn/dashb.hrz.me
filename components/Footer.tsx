@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <Link to="/" className="flex items-center gap-2 group">
-              <img src="/assets/logo.png" alt="DashB Logo" className="w-6 h-6 group-hover:scale-110 transition-transform" />
+              <img src="/assets/logo.svg" alt="DashB Logo" className="w-6 h-6 group-hover:scale-110 transition-transform" />
               <span className="font-bold text-xl text-slate-900 dark:text-secondary group-hover:text-primary transition-colors">DashB | BETA</span>
             </Link>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs text-center md:text-left">
