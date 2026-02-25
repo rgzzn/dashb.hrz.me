@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
       {/* Headline */}
       <h1 className="text-5xl md:text-7xl font-black tracking-tight mb-6 max-w-4xl mx-auto text-slate-900 dark:text-secondary animate-fade-in-up">
         La tua Dashboard per Apple TV,{' '}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-indigo-400">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">
           Reimmaginata.
         </span>
       </h1>
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
           href="https://testflight.apple.com/join/hBXZH1qd"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95"
+          className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-cyan transition-all border border-primary/20 active:scale-95"
         >
           Beta TestFlight
         </a>
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
           href="https://github.com/rgzzn/DashB"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-indigo-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-indigo-900/60 transition-colors active:scale-95"
+          className="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-cyan-950/40 text-slate-900 dark:text-secondary rounded-xl text-lg font-bold flex items-center justify-center gap-2 border border-white/5 hover:bg-slate-300 dark:hover:bg-cyan-900/60 transition-colors active:scale-95"
         >
           <CodeBracketIcon className="size-6" />
           Vedi su GitHub
@@ -62,9 +62,9 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Dashboard Preview Image */}
-      <div className="relative max-w-5xl mx-auto mt-10 p-2 bg-slate-300/20 dark:bg-indigo-500/5 rounded-2xl border border-slate-300 dark:border-white/10 shadow-2xl backdrop-blur-sm group animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+      <div className="relative max-w-5xl mx-auto mt-10 p-2 bg-slate-300/20 dark:bg-cyan-500/5 rounded-2xl border border-slate-300 dark:border-white/10 shadow-2xl backdrop-blur-sm group animate-fade-in-up" style={{ animationDelay: '300ms' }}>
         <div className="rounded-xl overflow-hidden shadow-inner bg-slate-900 aspect-video relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-indigo-500/10 z-10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-cyan-500/10 z-10 pointer-events-none"></div>
           <Carousel images={[
             '/assets/simulator-1.png',
             '/assets/simulator-2.png',

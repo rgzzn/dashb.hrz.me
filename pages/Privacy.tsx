@@ -20,14 +20,14 @@ const Privacy: React.FC = () => {
         
         {/* Header Section */}
         <header className="flex flex-col items-center text-center mb-24 relative z-10">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold tracking-wide uppercase mb-8 shadow-[0_0_15px_rgba(139,92,246,0.5)]">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold tracking-wide uppercase mb-8 shadow-[0_0_15px_rgba(39,194,255,0.5)]">
             <ShieldCheckIcon className="w-5 h-5 mr-2" />
             Privacy Policy
           </div>
           
           <h1 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tighter leading-[1.1]">
             Privacy chiara, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-indigo-400 to-purple-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-300 to-cyan-300">
               design coerente,
             </span> <br />
             controllo totale
@@ -62,7 +62,7 @@ const Privacy: React.FC = () => {
         <div className="space-y-6 max-w-5xl mx-auto">
           <SectionCard 
             number="1"
-            icon={<ServerStackIcon className="w-6 h-6 text-indigo-400" />}
+            icon={<ServerStackIcon className="w-6 h-6 text-cyan-300" />}
             title="Dati raccolti"
           >
             DashB tratta esclusivamente dati funzionali all'esperienza richiesta dall'utente: feed RSS, informazioni calendario, meteo e preferenze di visualizzazione. Non effettuiamo profilazione pubblicitaria e non vendiamo dati a terzi.
@@ -70,7 +70,7 @@ const Privacy: React.FC = () => {
 
           <SectionCard 
             number="2"
-            icon={<LockClosedIcon className="w-6 h-6 text-indigo-400" />}
+            icon={<LockClosedIcon className="w-6 h-6 text-cyan-300" />}
             title="Conservazione e sicurezza"
           >
             Credenziali OAuth e token di accesso vengono custoditi in Apple Keychain. Le comunicazioni avvengono su canali cifrati HTTPS/TLS e applichiamo il principio del minimo privilegio per l'accesso ai dati.
@@ -78,7 +78,7 @@ const Privacy: React.FC = () => {
 
           <SectionCard 
             number="3"
-            icon={<CloudIcon className="w-6 h-6 text-indigo-400" />}
+            icon={<CloudIcon className="w-6 h-6 text-cyan-300" />}
             title="Servizi di terze parti"
           >
             Per alcune funzionalità DashB si integra con provider esterni (es. Google Calendar, Outlook, feed RSS). Ogni integrazione resta soggetta alle policy privacy del relativo fornitore.
@@ -86,7 +86,7 @@ const Privacy: React.FC = () => {
 
           <SectionCard 
             number="4"
-            icon={<BellIcon className="w-6 h-6 text-indigo-400" />}
+            icon={<BellIcon className="w-6 h-6 text-cyan-300" />}
             title="Aggiornamenti della policy"
           >
             Possiamo aggiornare questa informativa in caso di evoluzioni del prodotto o adeguamenti normativi. In caso di modifiche rilevanti, la pagina verrà aggiornata con data visibile di revisione.
@@ -103,7 +103,7 @@ const Privacy: React.FC = () => {
               href="https://github.com/rgzzn/dashb.hrz.me" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex-none px-8 py-3 rounded-full bg-primary hover:bg-primary/90 text-white font-bold transition-all shadow-[0_0_20px_rgba(139,92,246,0.3)] hover:shadow-[0_0_30px_rgba(139,92,246,0.5)]"
+              className="flex-none px-8 py-3 rounded-full bg-primary hover:bg-primary/90 text-white font-bold transition-all shadow-[0_0_20px_rgba(39,194,255,0.3)] hover:shadow-[0_0_30px_rgba(39,194,255,0.5)]"
             >
               Contatta il team
             </a>
@@ -132,7 +132,7 @@ const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode, titl
 const SectionCard = ({ number, icon, title, children }: { number: string, icon: React.ReactNode, title: string, children: React.ReactNode }) => (
   <div className="p-8 md:p-10 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-all flex flex-col md:flex-row gap-8 items-start">
     <div className="flex-none">
-       <div className="w-16 h-16 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center">
+       <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
          {icon}
        </div>
     </div>

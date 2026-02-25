@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Condividi DashB su X"
-              className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20"
+              className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-cyan-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20"
             >
               <ShareIcon className="size-5" />
             </a>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contatta il team DashB su GitHub"
-              className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-indigo-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20"
+              className="size-10 flex items-center justify-center rounded-xl bg-slate-200 dark:bg-cyan-900/30 text-slate-600 dark:text-secondary hover:text-primary transition-all hover:scale-110 border border-transparent dark:hover:border-primary/20"
             >
               <EnvelopeIcon className="size-5" />
             </a>
