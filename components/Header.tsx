@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo Area */}
         <Link to="/" className="flex items-center gap-2 cursor-pointer group">
-          <img src="/assets/logo.png" alt="DashB Logo" className="w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
+          <img src="/assets/logo.svg" alt="DashB Logo" className="w-10 h-10 group-hover:scale-110 transition-transform duration-300" />
           <h2 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-secondary group-hover:text-primary transition-colors">
             DashB
           </h2>
