@@ -35,12 +35,20 @@ const Hero: React.FC = () => {
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
         <a
+          href="https://apps.apple.com/us/app/dashb/id6759085627"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white dark:bg-white dark:text-slate-900 rounded-xl text-lg font-bold hover:scale-105 transition-transform shadow-xl active:scale-95"
+        >
+          Scarica dall'App Store
+        </a>
+        <a
           href="https://testflight.apple.com/join/hBXZH1qd"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto px-8 py-4 bg-primary text-white rounded-xl text-lg font-bold hover:shadow-lg hover:shadow-primary/30 hover:bg-accent-purple transition-all border border-primary/20 active:scale-95"
         >
-          Diventa un tester!
+          Beta TestFlight
         </a>
         <a 
           href="https://github.com/rgzzn/DashB"
