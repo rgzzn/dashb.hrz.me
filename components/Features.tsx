@@ -13,7 +13,7 @@ import {
 
 const Features: React.FC = () => {
   return (
-    <section id="features" className="py-24 bg-gradient-to-b from-transparent to-slate-50 dark:to-indigo-950/20">
+    <section id="features" className="py-24 bg-gradient-to-b from-transparent to-slate-50 dark:to-cyan-950/20">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -204,10 +204,10 @@ const Features: React.FC = () => {
           {/* Feature Block 3: Tech & Security */}
           <div className="bg-slate-900 rounded-3xl p-8 md:p-16 text-center text-white relative overflow-hidden group">
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-indigo-600/30 via-transparent to-purple-600/30"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-cyan-600/30 via-transparent to-cyan-500/30"></div>
             
             <div className="relative z-10 max-w-3xl mx-auto">
-              <ShieldCheckIcon className="size-16 mx-auto mb-6 text-indigo-400" />
+              <ShieldCheckIcon className="size-16 mx-auto mb-6 text-cyan-300" />
               <h3 className="text-3xl md:text-4xl font-bold mb-6">Sicuro. Open Source. Swift.</h3>
               <p className="text-lg text-slate-300 mb-10 leading-relaxed">
                 Costruito con tecnologie native Apple per la massima affidabilità. 
@@ -222,7 +222,7 @@ const Features: React.FC = () => {
                   { title: 'Open Source', desc: 'MIT License', icon: CodeBracketIcon },
                 ].map((item, i) => (
                   <div key={i} className="p-4 rounded-xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                    <item.icon className="size-6 text-indigo-400 mb-2" />
+                    <item.icon className="size-6 text-cyan-300 mb-2" />
                     <div className="font-bold text-sm">{item.title}</div>
                     <div className="text-xs text-slate-400">{item.desc}</div>
                   </div>
@@ -230,7 +230,7 @@ const Features: React.FC = () => {
               </div>
 
               <div className="flex justify-center">
-                 <a href="https://github.com/rgzzn/DashB" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold hover:bg-slate-100 transition-colors shadow-lg hover:shadow-indigo-500/20">
+                 <a href="https://github.com/rgzzn/DashB" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 rounded-xl font-bold hover:bg-slate-100 transition-colors shadow-lg hover:shadow-cyan-500/20">
                   <CodeBracketIcon className="size-5" />
                   Esplora su GitHub
                 </a>

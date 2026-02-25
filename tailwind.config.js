@@ -9,12 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#8B5CF6",
-        secondary: "#E0E7FF",
-        "deep-indigo": "#1E1B4B",
-        "accent-purple": "#A855F7",
+        primary: "#27C2FF",
+        secondary: "#D9F5FF",
+        "deep-ocean": "#062338",
+        "accent-cyan": "#5FD4FF",
         "background-light": "#f6f6f8",
-        "background-dark": "#0B0A1F",
+        "background-dark": "#050B14",
       },
       fontFamily: {
         display: ["Manrope", "sans-serif"],

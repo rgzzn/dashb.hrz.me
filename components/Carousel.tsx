@@ -51,7 +51,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           </div>
         ))}
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-indigo-500/10 z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-cyan-500/10 z-10 pointer-events-none"></div>
       </div>
 
       {/* Left Arrow */}
