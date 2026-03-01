@@ -24,18 +24,24 @@ const Footer: React.FC = () => {
             {[
               { label: 'Termini', href: 'https://github.com/rgzzn/DashB/blob/main/LICENSE' },
               { label: 'Changelog', href: 'https://github.com/rgzzn/DashB/releases' },
-              { label: 'Supporto', href: 'https://github.com/rgzzn/DashB/issues' },
+              { label: 'Supporto', href: '/support' },
               { label: 'Stato', href: 'https://github.com/rgzzn/DashB' }
             ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/') ? (
+                <Link key={link.label} to={link.href} className="hover:text-primary transition-colors">
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
           </div>
 
