@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import Privacy from './pages/Privacy';
+import Support from './pages/Support';
 
 const Home = () => (
   <>
@@ -22,6 +23,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </main>
       <Footer />
